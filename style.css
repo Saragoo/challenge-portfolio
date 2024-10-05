@@ -1,0 +1,489 @@
+/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+    --cor-do-titulo: #333; 
+    --cor-do-icone: #007bff; 
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: none;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var (--cor-de-fundo); /* Cor de fundo suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+.apresentacao__foto {
+    border-radius: 50%; /* Torna a imagem redonda */
+    width: 100px; /* Tamanho fixo da imagem */
+    height: 100px; /* Tamanho fixo da imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.apresentacao__conteiner {
+    max-width: 600px; /* Largura máxima do container de texto */
+}
+
+.apresentacao__titulo {
+    font-size: 1.5em; /* Tamanho da fonte do título */
+    color: var(--cor-do-titulo); /* Cor do texto do título */
+    margin: 0; /* Remove margens padrão */
+}
+
+.apresentacao__subtitulo {
+    font-size: 1.2em; /* Tamanho da fonte do subtítulo */
+    color: #666; /* Cor do texto do subtítulo */
+    margin: 5px 0; /* Margem entre o subtítulo e o parágrafo */
+}
+
+.redes {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Exibe os itens da lista em linha */
+    gap: 15px; /* Espaço entre os itens */
+    margin-top: 10px; /* Espaço acima da lista */
+}
+
+.redes__elemento {
+    background-color: var(--cor-de-fundo); /* Cor de fundo suave */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.redes__elemento a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: var(--cor-do-titulo); /* Cor do texto */
+    display: flex; /* Exibe o texto e a imagem em linha */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.redes__elemento img {
+    margin-left: 5px; /* Espaço entre o texto e a imagem */
+    width: 16px; /* Tamanho fixo da imagem */
+    height: 16px; /* Tamanho fixo da imagem */
+}
+
+.redes__elemento:hover {
+    background-color: var(--cor-de-fundo-menu); /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.sobre-mim {
+    background-color: var(--cor-de-fundo); /* Cor de fundo clara */
+    padding: 40px; /* Espaçamento interno maior */
+    border-radius: 10px; /* Bordas levemente arredondadas */
+    width: 91vw; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    font-family: 'Arial', sans-serif; /* Fonte geral */
+}
+
+/* Título da seção */
+.sobre-mim__titulo {
+    font-size: 2.5rem; /* Tamanho do título */
+    color: var(--cor-do-titulo); /* Cor escura para o título */
+    margin-bottom: 20px; /* Espaçamento maior abaixo do título */
+    text-align: left; /* Alinha o título à esquerda */
+    font-weight: bold; /* Negrito no título */
+}
+
+/* Parágrafos da seção */
+.sobre-mim__texto {
+    font-size: 1.1rem; /* Tamanho de fonte ajustado para melhor legibilidade */
+    line-height: 1.8; /* Espaçamento entre linhas maior */
+    color: #555; /* Cor de texto ajustada */
+    margin-bottom: 20px; /* Espaçamento maior entre parágrafos */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Assinatura opcional */
+.sobre-mim__assinatura {
+    display: block;
+    margin: 30px 0 0; /* Espaçamento acima da assinatura */
+    max-width: 180px; /* Largura limitada da assinatura */
+    
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+.habilidades {
+    background-color: var(--cor-de-fundo);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.habilidades__titulo {
+    font-size: 2.5em;
+    color: var(--cor-do-titulo);
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+.habilidades__lista {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.habilidades__elemento:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.habilidades__icone {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: var(--cor-do-icone); /* Azul para os ícones */
+    display: flex;
+    align-items: flex-end; /* Centraliza o ícone verticalmente */
+    justify-content: flex-start; /* Centraliza o ícone horizontalmente */
+    margin-top: auto; 
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.hobbies__titulo {
+    font-size: 2.5rem;
+    color: var(--cor-do-titulo);
+    margin-bottom: 20px;
+}
+
+.hobbies__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hobbies__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.hobbies__elemento:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hobbies__icone {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    color: var(--cor-do-icone); /* Azul para os ícones */
+    display: flex;
+    align-items: flex-end; /* Centraliza o ícone verticalmente */
+    justify-content: flex-start; /* Centraliza o ícone horizontalmente */
+    margin-top: auto;
+}
+
+.hobbies__nome {
+    font-size: 1rem;
+    color: var(--cor-do-titulo);
+    margin-top: 5px;
+}
+
+
+/*------------------------------ Seção de Formação --------------------------------*/
+.formacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px; /* Adiciona espaço em volta do conteúdo */
+  }
+  
+  /* Estilos para o título */
+  .formacao__titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a lista de formação */
+  .formacao__lista {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+  }
+  
+  /* Estilos para cada elemento da lista */
+  .formacao__elemento {
+    display: flex; /* Permite organizar o conteúdo em linhas */
+    margin-top: 100px;
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para os ícones */
+  .formacao__icone {
+    width: 50px; /* Define a largura do ícone */
+    height: 50px; /* Define a altura do ícone */
+    margin-right: 20px; /* Adiciona margem à direita do ícone */
+  }
+  
+  /* Estilos para o título e detalhes de cada formação */
+  .formacao__nome {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .formacao__detalhe {
+    font-size: 14px;
+    color: var(--cor-do-titulo);
+  }
+
+
+  
+/*------------------------------ Seção de Projetos --------------------------------*/
+.projetos {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projetos__titulo {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.projetos__conteiner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--cor-de-fundo-menu);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projetos__conteiner img {
+    width: 150px; /* Tamanho fixo para a imagem */
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.projetos__informacoes {
+    flex-grow: 1; /* A seção de informações ocupará o espaço restante */
+    text-align: left;
+}
+
+.projetos__nome {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projetos__descricao {
+    font-size: 1rem;
+    color: var(--cor-do-titulo);
+    margin-bottom: 20px;
+}
+
+.projetos__links {
+    display: flex;
+    gap: 10px;  /* Espaçamento entre os botões */
+}
+
+.projetos__links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    background-color: var(--cor-do-icone);
+    transition: background-color 0.3s ease;
+}
+
+.projetos__links a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*------------------------------ Seção de Contato ---------------------------------*/
+.contato {
+    background-color: var(--cor-de-fundo);
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato__titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--cor-do-titulo);
+}
+
+.contato__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato_icone {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.contato__campo {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.contato__campo:focus {
+    border-color: #009688;
+    outline: none;
+}
+
+.contato__campo--textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contato__botao {
+    padding: 15px 30px;
+    background-color: #009688;
+    color: var(--cor-de-fundo);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato__botao:hover {
+    background-color: var(--cor-do-icone);
+}
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
